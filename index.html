@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio encriptador de alura</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="icon" href="./images/ms-icon-70x70.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>Encriptador de Daniel Cabrera Cruz </header>
+    <div class="container">
+            <section class="formText">
+                <form name="userdata">
+                    <textarea class="areaText" id="textContent" placeholder="Ingresa el texto"></textarea>
+                  </form>
+            </section>
+            <aside class="outText">
+                <div id="textEncrypt">
+                <img src="./images/looking.jpg" alt="Persona confundida buscando el texto" >
+                <p class="noMessageS">Ningun mensaje fue encontrado</p>
+                <p class="noMessageW">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div id="textContentEncrypt">
+                </div>
+                <div id="btnCopy">
+                </div>
+            </aside>
+            <section class="optionsText">
+                <p> !!!! Solo letras minusculas y sin acentos</p>
+                <button class="btnBlue" onclick="getTextToEncrypt();">Encriptar</button>
+                <button class="btnGray" onclick="getTextToDecrypt();" >Desencriptar</button>
+            </section>
+            <footer>
+                
+            </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>
